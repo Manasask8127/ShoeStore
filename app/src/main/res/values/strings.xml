@@ -10,4 +10,9 @@
     <string name="instruction">Instruction</string>
     <string name="set_of_instructions">set of instructions</string>
     <string name="add_new_shoe">Add new shoe</string>
+    <string name="save">Save</string>
+    <string name="shoe_company">Shoe Company</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
 </resources>
