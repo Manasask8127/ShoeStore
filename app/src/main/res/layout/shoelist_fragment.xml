@@ -3,9 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context="com.udacity.shoestore.list.ShoeListFragment">
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -20,7 +24,8 @@
                 android:id="@+id/shoeList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:orientation="vertical"
+                />
         </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

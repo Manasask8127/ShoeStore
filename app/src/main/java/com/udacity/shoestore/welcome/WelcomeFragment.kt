@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.WelcomeFragmentBinding
+import timber.log.Timber
 
 
 class WelcomeFragment: Fragment() {
@@ -18,6 +18,7 @@ class WelcomeFragment: Fragment() {
         // Inflate the layout for this fragment
         val binding: WelcomeFragmentBinding = DataBindingUtil.inflate(
             inflater, R.layout.welcome_fragment, container, false)
+        Timber.i("called detail fragment !!!")
 
         binding.next.setOnClickListener {
             findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
