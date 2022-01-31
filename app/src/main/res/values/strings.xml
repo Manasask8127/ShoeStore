@@ -8,7 +8,8 @@
     <string name="message">Welcome to Shoe Store</string>
     <string name="next">Next</string>
     <string name="instruction">Instructions</string>
-    <string name="set_of_instructions">Instructions to follow </string>
+    <string name="set_of_instructions"> there is add button where you can add shoe
+        ,later you will see list of shoes </string>
     <string name="add_new_shoe">Add new shoe</string>
     <string name="save">Save</string>
     <string name="shoe_company">Shoe Company</string>
