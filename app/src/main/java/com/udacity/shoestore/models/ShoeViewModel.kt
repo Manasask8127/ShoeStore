@@ -1,5 +1,6 @@
 package com.udacity.shoestore.models
 
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -18,7 +19,7 @@ class ShoeViewModel: ViewModel() {
     init {
 
        _shoelist.value= mutableListOf(
-           Shoe("Jordan","Nike","5","good")
+           Shoe("Jordan","Nike","5","casuals")
        )
 
         _dataSaved.value=false
@@ -26,9 +27,16 @@ class ShoeViewModel: ViewModel() {
 
     fun addShoe( newShoe: Shoe)
     {
-        _shoelist.value?.add(newShoe)
-        Timber.i("shoelist in model ${_shoelist.value}")
-        _dataSaved.value=true
+        if(newShoe.name.equals("") || newShoe.company.equals("")
+            || newShoe.size.equals("") || newShoe.description.equals(""))
+        {
+            _dataSaved.value=false
+        }
+        else {
+            _shoelist.value?.add(newShoe)
+            Timber.i("shoelist in model ${_shoelist.value}")
+            _dataSaved.value = true
+        }
     }
 
     fun onSaveFinished()

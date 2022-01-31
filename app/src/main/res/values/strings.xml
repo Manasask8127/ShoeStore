@@ -5,7 +5,7 @@
     <string name="please_enter_your_password">Please enter your password</string>
     <string name="sign_up">sign up</string>
     <string name="welcome">Welcome %s </string>
-    <string name="message">Welcome to Shoe Store</string>
+    <string name="message">Welcome to Shoe Store \n Shoes are the most comforfale footwares with variety of brands</string>
     <string name="next">Next</string>
     <string name="instruction">Instructions</string>
     <string name="set_of_instructions"> there is add button where you can add shoe
