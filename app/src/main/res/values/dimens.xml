@@ -2,5 +2,6 @@
 <resources>
     <dimen name="header">24dp</dimen>
     <dimen name="content">16dp</dimen>
+    <dimen name="min_text_height">48dp</dimen>
 
 </resources>

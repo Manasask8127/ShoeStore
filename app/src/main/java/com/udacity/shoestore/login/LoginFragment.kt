@@ -32,11 +32,11 @@ class LoginFragment : Fragment() {
     }
     private fun checkDataAndNavigate()
     {
-        if(TextUtils.isEmpty(binding.etMail.text) || TextUtils.isEmpty(binding.etPassword.text))
+        if(TextUtils.isEmpty(binding.mailAddress.text) || TextUtils.isEmpty(binding.password.text))
             Toast.makeText(requireActivity(),"Please enter mail and password",Toast.LENGTH_LONG).show()
         else
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment(
-                binding.etMail.text.toString()
+                binding.mailAddress.text.toString()
             ))
     }
 }

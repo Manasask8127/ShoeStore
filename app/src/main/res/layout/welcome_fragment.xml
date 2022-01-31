@@ -13,7 +13,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
             android:text="@string/welcome"
+            android:textAlignment="center"
             android:textSize="@dimen/header"
+            style="@style/Widget.ShoeStore.TextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -23,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="264dp"
+            style="@style/Widget.ShoeStore.TextView"
             android:text="@string/message"
             android:textAlignment="center"
             android:textSize="@dimen/content"

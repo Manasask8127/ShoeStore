@@ -11,16 +11,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#989696"
-            app:cardMaxElevation="12dp"
-            app:cardElevation="10dp"
             app:cardCornerRadius="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
@@ -30,8 +27,9 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="8dp"
                 android:orientation="vertical">
 
 
@@ -39,7 +37,8 @@
                     android:id="@+id/cvShoeName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{shoe.name}" />
+                    android:text="@{shoe.name}"
+                    android:textAppearance="?attr/textAppearanceHeadline6"/>
 
                 <TextView
                     android:id="@+id/cvShoeCompany"
@@ -51,7 +50,8 @@
                     android:id="@+id/cvShoeSize"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{shoe.size}" />
+                    android:text="@{shoe.size}"
+                    android:textAppearance="?attr/textAppearanceHeadline6"/>
 
                 <TextView
                     android:id="@+id/cvShoeDescription"
@@ -59,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:text="@{shoe.description}" />
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
