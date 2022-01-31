@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -23,6 +24,9 @@ class WelcomeFragment: Fragment() {
         binding.next.setOnClickListener {
             findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
         }
+        val args = WelcomeFragmentArgs.fromBundle(requireArguments())
+        Toast.makeText(context, "UserName is : ${args.userName}", Toast.LENGTH_LONG).show()
+        binding.tvWelcome.text="Welcome "+args.userName
         return binding.root
     }
 }

@@ -29,12 +29,13 @@ class ShoeDetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(
             inflater, R.layout.shoedetail_fragment, container, false)
 
-        shoeViewModel  =ViewModelProvider(this).get(ShoeViewModel::class.java)
+        shoeViewModel  =ViewModelProvider(requireActivity()).get(ShoeViewModel::class.java)
 
         Timber.i("called detail fragment !!!")
 
         binding.shoeViewModel =shoeViewModel
-        binding.setLifecycleOwner(this)
+        //binding.setLifecycleOwner(this)
+
 
         binding.newShoe = Shoe("","","","")
 
@@ -45,8 +46,9 @@ class ShoeDetailFragment : Fragment() {
         shoeViewModel.dataSaved.observe(viewLifecycleOwner, Observer { isdataSaved ->
             if(isdataSaved)
             {
-                navigateTo()
                 shoeViewModel.onSaveFinished()
+                navigateTo()
+
             }
         })
 

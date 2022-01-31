@@ -16,51 +16,41 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/iv_email"
             android:layout_marginStart="16dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
+            android:layout_marginTop="128dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/et_mail"
-            app:layout_constraintBottom_toBottomOf="@id/et_mail"/>
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <EditText
             android:id="@+id/et_mail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="228dp"
             android:hint="@string/please_enter_your_mail_id"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_mail"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@id/iv_mail"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="TextContrastCheck" />
+            app:layout_constraintTop_toTopOf="@id/iv_mail" />
 
         <ImageView
             android:id="@+id/iv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/iv_password"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/et_password"
-            app:layout_constraintTop_toTopOf="@id/et_password"/>
+            android:layout_marginTop="128dp"
+            app:layout_constraintStart_toStartOf="@id/iv_mail"
+            app:layout_constraintTop_toBottomOf="@id/iv_mail" />
 
         <EditText
             android:id="@+id/et_password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="108dp"
             android:hint="@string/please_enter_your_password"
             android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_password"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@id/iv_password"
-            app:layout_constraintTop_toBottomOf="@id/et_mail" />
+            app:layout_constraintTop_toTopOf="@id/iv_password" />
 
         <Button
             android:id="@+id/bt_signin"
@@ -68,21 +58,22 @@
             android:layout_height="wrap_content"
             android:text="@string/sign_in"
             app:layout_constraintBaseline_toBaselineOf="@+id/bt_signup"
-            app:layout_constraintEnd_toStartOf="@+id/bt_signup"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"/>
 
         <Button
             android:id="@+id/bt_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="76dp"
+            android:layout_marginEnd="64dp"
             android:text="@string/sign_up"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toEndOf="@id/bt_signin"
             app:layout_constraintTop_toBottomOf="@+id/et_password"
-            app:layout_constraintVertical_bias="0.537" />
-
-
+            app:layout_constraintVertical_bias="0.555" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -34,10 +35,10 @@ class ShoeListFragment : Fragment() {
             findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }
 
-        shoeViewModel= ViewModelProvider(this).get(ShoeViewModel::class.java)
+        shoeViewModel= ViewModelProvider(requireActivity()).get(ShoeViewModel::class.java)
 
 //        binding.shoeViewModelList =shoeViewModel
-       // binding.lifecycleOwner = this
+          binding.lifecycleOwner = this
 
         shoeViewModel.shoelist.observe(viewLifecycleOwner,Observer{
             shoeList->

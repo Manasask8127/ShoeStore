@@ -20,6 +20,7 @@ class ShoeViewModel: ViewModel() {
        _shoelist.value= mutableListOf(
            Shoe("Jordan","Nike","5","good")
        )
+
         _dataSaved.value=false
     }
 

@@ -19,8 +19,6 @@
         android:layout_height="match_parent">
 
 
-
-
         <TextView
             android:id="@+id/tvShoeName"
             android:layout_width="wrap_content"

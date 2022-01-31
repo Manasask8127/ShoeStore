@@ -4,11 +4,11 @@
     <string name="please_enter_your_mail_id">Please enter your mail id</string>
     <string name="please_enter_your_password">Please enter your password</string>
     <string name="sign_up">sign up</string>
-    <string name="welcome">Welcome</string>
-    <string name="messsage">Welcome message</string>
+    <string name="welcome">Welcome %s </string>
+    <string name="message">Welcome to Shoe Store</string>
     <string name="next">Next</string>
-    <string name="instruction">Instruction</string>
-    <string name="set_of_instructions">set of instructions</string>
+    <string name="instruction">Instructions</string>
+    <string name="set_of_instructions">Instructions to follow </string>
     <string name="add_new_shoe">Add new shoe</string>
     <string name="save">Save</string>
     <string name="shoe_company">Shoe Company</string>

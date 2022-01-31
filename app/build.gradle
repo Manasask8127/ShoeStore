@@ -59,4 +59,10 @@ dependencies {
 
     //cardview
     implementation "androidx.cardview:cardview:1.0.0"
+
+    //Livedata viewmodel
+    //implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-alpha01"
+
+    //"androidx.fragment:fragment-ktx:1.4.1"
+
 }
