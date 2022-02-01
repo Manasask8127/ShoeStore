@@ -53,16 +53,19 @@
     <fragment
         android:id="@+id/ShoeList"
         android:name="com.udacity.shoestore.list.ShoeListFragment"
-        android:label="Shoelist_fragment">
+        android:label="Shoelist_fragment"
+        tools:layout="@layout/shoelist_fragment">
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
             app:destination="@id/shoeDetail"
             app:popUpToInclusive="false" />
+
     </fragment>
     <fragment
         android:id="@+id/shoeDetail"
         android:name="com.udacity.shoestore.detail.ShoeDetailFragment"
-        android:label="Shoedetail_fragment" >
+        android:label="Shoedetail_fragment"
+        tools:layout="@layout/shoedetail_fragment">
         <action
             android:id="@+id/action_shoedetail_destination_to_shoelist_destination"
             app:destination="@id/ShoeList"
